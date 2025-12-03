@@ -1,0 +1,58 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Візитка */
+.card {
+    position: relative;
+    width: 350px;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+    /* Анімація плавання */
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Заголовок */
+.card h1 {
+    margin: 0 0 10px;
+}
+
+/* Кнопка */
+.card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #4b79a1;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Підсвітка при наведенні */
+.card button:hover {
+    background: #35516b;
+    transform: scale(1.05);
+}
+
+/* Кадри анімації плавання */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
